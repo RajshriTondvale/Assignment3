@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Light:ON-OFF</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<style>
+			.circle
+			{
+				height:450px;
+				width:350px;
+				border-radius:50%;
+				margin-bottom:40px;
+			}
+	
+			#OnOff
+			{
+			    margin-left: auto;
+                margin-right: auto;
+			}
+			
+			#btnOFF
+			{
+				margin-left:50px;
+			}
+			
+			#btnON
+			{
+				margin-left:38%;
+			}
+			
+			.grey
+			{
+				background-color:grey;
+			}
+	
+			.yellow
+			{
+				background-color:yellow;
+			}
+	</style>
+	</head>
+		<body>
+			<div class="container">
+				<h1 class="text-center">LIGHT</h1>
+				<div class="circle grey" id="OnOff"></div>
+				<button type="button"  class="buttonON"  id="btnON" onclick="myFunction()">Turn ON Light</button>
+				<button type="button"  class="buttonOFF"  id="btnOFF" onclick="myFunction()">Turn OFF light</button>
+			</div>
+			<script src="light.js" ></script>
+		</body>
+</html>

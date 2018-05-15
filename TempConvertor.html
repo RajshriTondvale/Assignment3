@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Temperature-Conversion</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<style>
+			h1
+			{
+				color:blue;
+				margin-top:80px;
+			}
+		</style>
+	<head>
+		<body onload="myFunction()">
+			<h1 class="text-center" id="demo"></h1>
+			<script>
+            function myFunction()
+			{
+                var temperature = prompt("Enter Temperature in degree Fahrenheit.","");
+                if(temperature !== "" && temperature !== null) 
+				{
+                    console.log(temperature);
+					console.log(typeof(temperature));
+					console.log('2', typeof(Number(temperature)));
+					temperature = Number(temperature);
+                    var temperatureInCelcius = (((temperature - 32) * 5) / 9).toFixed(2);
+                    console.log(typeof(temperature));
+                    console.log(typeof(temperatureInCelcius));
+                    document.getElementById("demo").innerHTML = "The Temperature is " +temperatureInCelcius+" degree Celsius.";
+                } 
+				else
+				{
+                    myFunction();
+                }
+            }
+        </script>
+		</body>
+		
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game:Golf</title>
+		<meta charset="utf-8">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		 <style>
+				h1
+				{
+					color:red;
+				}
+				
+				.game
+				{	margin-top:40px;
+					margin-left:150px;
+					height:150px;
+				}
+				
+				.input
+				{
+					width:250px;
+				}
+		 </style>
+	</head>
+		<body>
+			<div class="container">
+				<h1 class="text-center">Golf-Game</h1>
+				<div class="row">
+					<div class="game col-md-4">
+						<p>Enter Number of strokes for Round 1</p>
+						<input type="number" class="input" id="round-1" placeholder="Enter upto 2 digit number" onfocusout="myFunction(this)">
+						<p>Par strokes for Round 1 - 1 stroke</p>
+						<p id="ValueRound1"></p>
+					</div>
+					
+					<div class="game col-md-4">
+						<p>Enter Number of strokes for Round 2</p>
+						<input type="number"class="input" id="round-2" placeholder="Enter upto 2 digit number" onfocusout="myFunction(this)" >
+						<p>Par strokes for Round 2 - 3 strokes</p>
+						<p id="ValueRound2"></p>
+					</div>
+					
+					<div class="game col-md-4">
+						<p>Enter Number of strokes for Round 3</p>
+						<input type="number" class="input" id="round-3" placeholder="Enter upto 2 digit number" onfocusout="myFunction(this)">
+						<p>Par strokes for Round 3 - 5 strokes</p>
+						<p id="ValueRound3"></p>
+					</div>
+					
+					<div class="game col-md-4">
+						<p>Enter Number of strokes for Round 4</p>
+						<input type="number" class="input" id="round-4" placeholder="Enter upto 2 digit number" onfocusout="myFunction(this)">
+						<p>Par strokes for Round 4 - 7 strokes</p>
+						<p id="ValueRound4"></p>
+					</div>
+					
+					<div class="game col-md-4">
+						<p>Enter Number of strokes for Round 5</p>
+						<input type="number" class="input" id="round-5" placeholder="Enter upto 2 digit number" onfocusout="myFunction(this)">
+						<p>Par strokes for Round 5 - 9 stroke</p>
+						<p id="ValueRound5"></p>
+					</div>
+					
+				</div>
+			</div>
+			<script src="GolfGame.js"></script>
+		</body>
+</html>
